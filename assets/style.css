@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul, input {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+   
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  :root{
+
+    --cor1: #F4E2DE ;
+    --cor2: #D94F04 ;    
+    --cor3: #F29325 ;
+    --cor4: #007172 ;
+    --cor5: #025259 ;
+    --cor6: #474241 ;
+    --cor7: #a3b9b9c5 ;
+    --cor8: #ebb16f ;
+    --cor9: #f1a042 ;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-width: 500px;
+    width: 600px;
+  }
+
+  header{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor1);
+   
+    
+    height: 3em;
+    width: 100vh;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    border-radius: 7px;
+    background-color: var(--cor5);
+  }
+
+
+
+  main{
+    width: 100%;
+    background-color: var(--cor7);
+    border-radius: 17px;
+
+  }
+  .btn-line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  button{
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    margin: 0 0 10px 10px;
+    border-radius: 20px;
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border: var(--cor6) solid 2px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: var(--cor5);
+    color: var(--cor7);
+  }
+   
+  .display-calculator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor8);
+    color: var(--cor6);
+    border: var(--cor6) solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 83px;
+    font-size: 65px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  .hidden-button{
+    background: RGBA(0,0,0,0);
+    color: RGBA(0,0,0,0);
+    border: none;
+  }
+  .btn-operator{
+    background: var(--cor9);
+    
+  }
+  .btn-operator:hover{
+    background: var(--cor3);
+  }
+
+  #equalSignal{
+   width: 430px;
+   font-size: 60px;  
+  }
+    
