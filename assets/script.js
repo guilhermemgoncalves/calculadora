@@ -1,55 +1,43 @@
-let result = document.getElementById('displayedResult');
+let result = document.getElementById("displayedResult");
 
-result.innerText = '0';
+result.innerText = "0";
+let resultCalc = 0;
 
-addEventListener("click", function(event) {
+addEventListener("click", function (event) {
+  let target = event.target;
 
+  if (target.value !== undefined) {
+    if (!isNaN(target.value)) {
+      IsNumber(target.value);
+    } else if (target.value == "C") {
+      IsClear();
+    } else if (target.value == "=") {
+        IsEqualsSignal();
+    }
+    else{
+        IsOperator();
+    }
+  }
 
-    let target = event.target;
-   
-    if (target.value !== undefined ) {
-    result.innerHTML = target.value;
+  function IsNumber(numberClick) {
+    if (result.innerText == "0") {
+      resultCalc = numberClick;
+    } else resultCalc += numberClick;
 
+    console.log(resultCalc);
+    result.innerText = resultCalc;
+  }
 
-
-     
-
-
-
-
-
-
-
-
-
-
-
+  function IsOperator() {
+      console.log("Cheguei");
 }
+function IsEqualsSignal() {    
 
-function IsNumber()
-{
+  }
+  function IsClear() {
+    resultCalc = 0;
+    result.innerText = resultCalc;
+  }
 
-}
-
-function IsOperator()
-{
-
-}
-function IsEqualsSignal()
-{
-
-}
-function IsClear()
-{
-
-}
-
-function DisplayNumber()
-{
-
-}
-
-
-
-
+  function DisplayNumber() {}
 });
