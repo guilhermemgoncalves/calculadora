@@ -129,4 +129,22 @@ html {
    width: 430px;
    font-size: 60px;  
   }
+
+  .resultRender{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     
+  }
+
+  .resultRender table{
+    width: 400px;
+  }
+    
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }

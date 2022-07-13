@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="assets/style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <header>
         <p>Calculadora</p>
     </header>
-    <main>     
+    <main>
 
         <div class="display-calculator">
             <label for="" id="displayedResult">0</label>
@@ -38,11 +40,29 @@
         <div class="btn-line">
             <button value="C">C</button>
             <button value="0">0</button>
-            <button value=".">.</button>
+            <button value="">.</button>
             <button value="/" class="btn-operator">/</button>
         </div>
         <div class="btn-line">
             <button value="=" id="equalSignal" class="btn-operator">=</button>
+        </div>
+
+        <div class="resultRender">
+            <table id=resultTable border="1">
+               <tr>
+                   <td>
+                       N1
+                   </td>
+                   <td>
+                       OP
+                   <td>
+                       N2
+                   </td>
+                   <td>
+                       Resultado
+                    </td>
+                </tr>
+        </table>
         </div>
 
 
@@ -54,4 +74,5 @@
     </footer>
     <script src="assets/script.js"></script>
 </body>
+
 </html>
