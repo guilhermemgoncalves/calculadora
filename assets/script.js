@@ -94,6 +94,10 @@ function IsEqualsSignal() {
     Reulstado: finalResult
   });
 
+  const elementoRender = document.createElement('tr');
+  elementoRender.innerHTML = `<td>${currentNumber}</td><td>${currentOperator}</td><td>${displayNumber}</td> <td>${finalResult}</td>` 
+  document.getElementById('resultTable').appendChild(elementoRender)
+
 
 
   result.innerText = finalResult;
